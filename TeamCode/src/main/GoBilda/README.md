@@ -1,6 +1,6 @@
 # GoBilda
 
-Official goBILDA learning code from [GitHub](https://github.com/goBILDA-Official/FtcRobotController-Add-Starter-Kit-Code/tree/Add-Starter-Kit-Code)
+Official goBILDA learning code from [GitHub](https://github.com/goBILDA-Official/FtcRobotController-Add-Starter-Kit-Code/tree/Add-Starter-Kit-Code).
 
 ## TeamCode Module
 
@@ -10,4 +10,4 @@ robot controller App.
 ## Creating your own OpModes
 
 The easiest way to create your own OpMode is to copy a Sample OpMode and make it your own. 
-Sample opmodes exist in the [FtcRobotController module](https://github.com/goBILDA-Official/FtcRobotController-Add-Starter-Kit-Code/tree/Add-Starter-Kit-Code/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples)
+Sample opmodes exist in the [FtcRobotController module](https://github.com/goBILDA-Official/FtcRobotController-Add-Starter-Kit-Code/tree/Add-Starter-Kit-Code/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples).
