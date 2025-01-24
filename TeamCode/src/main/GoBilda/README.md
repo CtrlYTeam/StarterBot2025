@@ -1,6 +1,6 @@
 # GoBilda
 
-Official goBILDA learning code from [GitHub](https://link-url-here.org](https://github.com/goBILDA-Official/FtcRobotController-Add-Starter-Kit-Code/tree/Add-Starter-Kit-Code)
+Official goBILDA learning code from [GitHub](https://github.com/goBILDA-Official/FtcRobotController-Add-Starter-Kit-Code/tree/Add-Starter-Kit-Code)
 
 ## TeamCode Module
 
