@@ -42,7 +42,7 @@ public class TeleOP extends LinearOpMode {
     public CRServo  intake      = null; //the active intake servo
     public Servo    wrist       = null; //the wrist servo
 
-    public static double power = 0.5;
+    public static double power = 1;
     public static double motorPowerZero = 0;
 
 
@@ -163,7 +163,7 @@ public class TeleOP extends LinearOpMode {
             /* Set the drive and turn variables to follow the joysticks on the gamepad.
             the joysticks decrease as you push them up. So reverse the Y axis. */
             forward = -gamepad1.left_stick_y;
-            rotate  = gamepad1.right_stick_x;
+            rotate  = gamepad1.left_stick_x;
 
             if(forward>0){
                 leftDrive.setPower(power);
@@ -192,7 +192,6 @@ public class TeleOP extends LinearOpMode {
             //right 1
 
             if (gamepad1.a) {
-                intake.setPower(INTAKE_COLLECT);
             }
             else if (gamepad1.x) {
                 intake.setPower(INTAKE_OFF);
@@ -203,13 +202,11 @@ public class TeleOP extends LinearOpMode {
 
             if(gamepad1.right_bumper){
                 /* This is the intaking/collecting arm position */
-                armPosition = ARM_COLLECT;
-                wrist.setPosition(WRIST_FOLDED_OUT );
                 intake.setPower(INTAKE_COLLECT);
             }
 
             else if (gamepad1.left_bumper){
-                armPosition = ARM_CLEAR_BARRIER;
+                intake.setPower(INTAKE_OFF);
             }
 
             else if (gamepad1.y){
@@ -243,7 +240,9 @@ public class TeleOP extends LinearOpMode {
             }
 
             armPositionFudgeFactor = FUDGE_FACTOR * (gamepad1.right_trigger + (-gamepad1.left_trigger));
-
+//            if (gamepad1.right_stick_y) {
+//
+//            }
             armMotor.setTargetPosition((int) (armPosition + armPositionFudgeFactor));
 
             ((DcMotorEx) armMotor).setVelocity(2100);
